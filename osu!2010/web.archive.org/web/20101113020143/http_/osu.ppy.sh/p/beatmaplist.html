@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+
+<!-- Mirrored from web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+<script type="text/javascript" src="http://web.archive.org/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app6.us.archive.org";archive_analytics.values.server_ms=370;</script>
+<link type="text/css" rel="stylesheet" href="http://web.archive.org/static/css/banner-styles.css"/>
+
+
+<link rel="shortcut icon" href="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="http://web.archive.org/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="osu! - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor." />
+<meta name="keywords" content="osu, peppy, ouendan, elite, beat, agents, ds, windows, game, taiko, tatsujin, simulator, sim, xna, ddr, beatmania, osu!, osume" />
+
+<link rel="stylesheet" type="text/css" href="http://web.archive.org/web/20101113020143cs_/http://osu.ppy.sh/css/style.css" media="all" />
+<script type="text/javascript" src="http://web.archive.org/web/20101113020143js_/http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20101113020143js_/http://osu.ppy.sh/js/main.js"></script>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://web.archive.org/feed/ranked" />
+<title>osu! - Beatmap Listing</title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="http://web.archive.org/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://web.archive.org/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://osu.ppy.sh/p/beatmaplist";
+
+var firstYear = 1996;
+var displayDay = "13";
+var displayMonth = "lis";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="https://s.ppy.sh/images/head-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="http://web.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://osu.ppy.sh/p/beatmaplist" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20101113020143" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20101012111046/http://osu.ppy.sh/p/beatmaplist" title="12 paź 2010">PAŹ</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 2:01:43 lis 13, 2010">LIS</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20101230041400/http://osu.ppy.sh/p/beatmaplist" title="30 gru 2010"><strong>GRU</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20101113014939/http://osu.ppy.sh/p/beatmaplist?" title="1:49:39 lis 13, 2010"><img src="http://web.archive.org/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 2:01:43 lis 13, 2010">13</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="http://web.archive.org/web/20101120135921/http://osu.ppy.sh/p/beatmaplist" title="13:59:21 lis 20, 2010"><img src="http://web.archive.org/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20090423171239/http://osu.ppy.sh/p/beatmaplist?" title="23 kwi 2009"><strong>2009</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 2:01:43 lis 13, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="http://web.archive.org/web/20111117143227/http://osu.ppy.sh/p/beatmaplist" title="17 lis 2011"><strong>2011</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="http://web.archive.org/web/20101113020143*/http://osu.ppy.sh/p/beatmaplist" title="See a list of every capture for this URL">379 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 sty 09 - 19 sty 17</div>
+       </td>
+       <td class="k">
+       <a href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="http://web.archive.org/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:275200000000_2010:10:010000004232_2011:-1:3465550a4ba9_2012:-1:259a64387464_2013:-1:a00183646400_2014:-1:143013110548_2015:-1:68e45026b9c8_2016:-1:50bb93530311_2017:-1:100000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<a name="top"></a>
+
+<div class="bodytopbg">
+    <div class="mainbody"><div class="mainbody2">
+		<div id="coolheader" style="background-image: url('http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/right-j.jpg');"></div>
+		<div id="donation">
+			<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/support'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/paypal.gif'/></a>
+		</div>
+         <div class="header">
+			<div id="playstats">
+                <b>491,602</b> users, <b>1,654</b> online now.<br />
+                A total of <b><span id='playcount'>209,112,896</span></b> ranked plays!
+            </div>
+        <div class="menu">
+            <ul class="sf-menu">
+                <li id="current"><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/">Home</a></li>
+                <li>
+                    <a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/about">Info</a>
+                    <ul>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/about">The Game (PC)</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/iphone">The Game (iPhone)</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/team">The Team</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/screenshots">Screenshots</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/changelog">Changelog</a></li>
+						
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/download">Download</a></li>
+                <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/faq">Help!</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/faq">FAQ</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/formatpost&amp;id=21575">Terms Glossary</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/viewtopic.php?f=13&amp;t=3815">Video Tutorials</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/viewtopic.php?f=5&amp;t=576">Report a Bug</a></li>
+                    </ul> 
+				</li>
+                <li><a href="beatmaplist.html">Beatmaps</a>
+                    <ul>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=0">Ranked</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=6">Approved</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist&amp;s=7&amp;r=2">Pending</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist">Beatmap Packs</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/playerranking">Rankings</a>
+                    <ul> 
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/playerranking">Overall Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/chart">Ranking Charts</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/countryranking">Countries</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/mapperranking">Mapper Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/modranking">BAT Ranking</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/kudosu">Kudosu Ranking</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/">Community</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/">Forums</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/support">Supporting osu!</a></li>
+                        <li><a href="http://web.archive.org/web/20101113020143/http://www.cafepress.com/osume" target="_blank">Goodies</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://youtube.com/groups_videos?name=osume" target="_blank">Videos</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/chat" target="_blank">Web Chat</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/gallery?g=fanart">Fanart</a></li>
+						<li><a href="http://web.archive.org/web/20101113020143/http://up.ppy.sh/">upppy!</a></li>
+                    </ul>
+				</li>
+            </ul>
+        </div>
+        </div>
+                <div class="content">
+                <div class="content-infoline">
+                    <div style="float:left">
+						<form class="inline-form" action="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/search" id="cse-search-box">
+						  <div>
+							<input type="hidden" name="cx" value="007714945049801807819:fwdivvi5sik" />
+							<input type="hidden" name="cof" value="FORID:10" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="text" name="q" size="20" />
+						  </div>
+						</form>
+						<form class="inline-form" onsubmit="return userSearch()">
+							<input type="text" class="default" name="user-search" id="user-search" size="12" title="User" />
+						</form>
+						<form class="inline-form" onsubmit="return beatmapSearch()">
+							<input type="text" class="default" name="beatmap-search" id="beatmap-search" size="12" title="Beatmap" />
+						</form>
+					</div>
+									<form action="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/ucp.php?mode=login" method="post">
+						<b>user:</b> 
+						<input class="post" type="text" name="username" size="15" maxlength="40" value="" tabindex="0" /> 
+						<b>pass:</b> 
+						<input class="post" type="password" name="password" size="15" maxlength="100" tabindex="0" />
+						<a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/ucp.php?mode=sendpassword" title="Forgot Password">?</a> <a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/forum/ucp.php?mode=register" title="Register New Account">register</a>
+						<input type="checkbox" class="radio" name="autologin" id="autologin"/> <label for="autologin">save</label>
+						<input type="hidden" name="redirect" value="/p/beatmaplist" />
+						<input type="hidden" name="sid" value="de34ef3743fd85fc784dcc2b077a76c6" />
+						<input type="submit" name="login" value="login" tabindex="5" />
+					</form>
+				                </div>
+
+<script type="text/javascript">
+	//<![CDATA[
+	var myListener = new Object();
+	var isPlaying = false;
+	myListener.onInit = function()
+	{
+		this.position = 0;
+	};
+	myListener.onUpdate = function()
+	{
+		isPlaying = (this.isPlaying == "true");
+	};
+
+	function getFlashObject()
+	{
+		return document.getElementById("myFlash");
+	}
+	var playingid = -1;
+	function play(id)
+	{
+		stop();
+
+		if (id != playingid || !isPlaying)
+		{
+			setVolume(45);
+			getFlashObject().SetVariable("method:setUrl", "/mp3/preview/" + id + ".mp3");
+			getFlashObject().SetVariable("method:play", "");
+			getFlashObject().SetVariable("enabled", "true");
+			playingid = id;
+		}
+
+		return false;
+	}
+	function stop()
+	{
+		getFlashObject().SetVariable("method:stop", "");
+	}
+	function setVolume(volume)
+	{
+		getFlashObject().SetVariable("method:setVolume", volume);
+	}
+	
+	function load(id)
+	{
+		document.location="/s/"+id;
+	}
+</script>
+<!--[if IE]>
+<script type="text/javascript" event="FSCommand(command,args)" for="myFlash">
+eval(args);
+</script>
+<![endif]-->
+
+<object class="playerpreview" id="myFlash" type="application/x-shockwave-flash" data="http://web.archive.org/mp3/mp3.swf" width="1" height="1">
+	<param name="movie" value="/mp3/mp3.swf" />
+	<param name="AllowScriptAccess" value="always" />
+	<param name="FlashVars" value="listener=myListener&amp;interval=500" />
+</object>
+
+
+<h1>Beatmap Listing</h1>
+<div class="paddingboth">
+Hover over an item to uncover quick links.<br/>
+Click a thumbnail to hear an audio preview.<br/>
+
+<div style='text-align:right;'>
+	<form name='mainform'>
+		<input type='hidden' name='s' value='7'/>
+		<input type='hidden' name='o' value='1'/>
+		Search:<input name='q' value=''/>
+		<input type='submit' value='search'/>
+		Display:<select name='r' onchange='document.mainform.submit()'>
+		<option value='0' SELECTED>Ranked
+		<option value='1' >Ranked (Unplayed)
+		<option value='6' >Approved
+		<option value='2' >Pending/Help
+		<option value='5' >Graveyard
+		<option value='4' >All</select> 
+		Genre:<select name='g' onchange='document.mainform.submit()'>
+							<option value=0 SELECTED>Any</option>
+							<option value=1 >Unspecified</option>
+							<option value=2 >Video Game</option>
+							<option value=3 >Anime</option>
+							<option value=4 >Rock</option>
+							<option value=5 >Pop</option>
+							<option value=6 >Other</option>
+							<option value=7 >Novelty</option>
+							<option value=9 >Hip Hop</option>
+							<option value=10 >Techno</option>
+					</select>
+		Language:<select name='la' onchange='document.mainform.submit()'>
+							<option value=0 SELECTED>Any</option>
+							<option value=2 >English</option>
+							<option value=3 >Japanese</option>
+							<option value=4 >Chinese</option>
+							<option value=5 >Instrumental</option>
+							<option value=6 >Korean</option>
+							<option value=1 >Other</option>
+							<option value=7 >French</option>
+							<option value=8 >German</option>
+							<option value=9 >Swedish</option>
+							<option value=10 >Spanish</option>
+					</select>
+		<br/>
+		<input type="checkbox" name='v' id='v' value='1' onchange='document.mainform.submit()' /><label for='v'> Has Video</label> 
+		<input type="checkbox" name='sb' id='sb' value='1' onchange='document.mainform.submit()' /><label for='sb'> Has Storyboard</label>
+	</form>
+</div>
+
+</div>
+
+
+<div class="pagination">Displaying 1 to 20 of 3917 results.<br/><b>1</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=2'>2</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=3'>3</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=4'>4</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=5'>5</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=6'>6</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=7'>7</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=8'>8</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=9'>9</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=10'>10</a>  ... <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=196'>196</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=2'>Next</a></div>
+
+<table class="beatmapListing" cellspacing=0>
+<th></th>
+<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=0&amp;o=&amp;r=0&amp;q='>Title</a></th>
+<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=1&amp;o=&amp;r=0&amp;q='>Artist</a></th>
+<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=2&amp;o=&amp;r=0&amp;q='>Creator</a></th>
+<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=3&amp;o=&amp;r=0&amp;q='>Difficulty</a></th>
+<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=0&amp;r=0&amp;q='>Ranked</a><img src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/down.gif" /></th>
+
+	<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=5&amp;o=&amp;r=0&amp;q='>User Rating</a></th>
+	<th><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=6&amp;o=&amp;r=0&amp;q='>Plays</a></th>
+	<th>Pack</th>
+	<th>Genre</th>
+</tr>
+
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(18105)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/18105"></td><td onclick='load(18105)' class='block'><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/18105'>Cardioid</a></td><td onclick='load(18105)'>Hatsune Miku</td><td onclick='load(18105)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/57448'>Lanttu</a></td><td onclick='load(18105)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> </td><td onclick='load(18105)'>Nov 13, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(18105)'><center>-<br/><small>needs 34 votes</small></center></td><td onclick='load(18105)'><center>1,398</center></td><td><center></center></td><td onclick='load(18105)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=7'>Novelty</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info18105' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/18105'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(22076)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/22076"></td><td onclick='load(22076)' class='block'><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/22076'>This Love (Will Be Your Downfall)</a></td><td onclick='load(22076)'>Ellie Goulding</td><td onclick='load(22076)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/110372'>Rukarioman</a></td><td onclick='load(22076)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(22076)'>Nov 12, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(22076)'><center>-<br/><small>needs 9 votes</small></center></td><td onclick='load(22076)'><center>2,551</center></td><td><center></center></td><td onclick='load(22076)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=5'>Pop</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=2'>English</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info22076' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/22076'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(9554)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/9554"></td><td onclick='load(9554)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/9554'>Primal Dialga Remix</a></td><td onclick='load(9554)'>PokeRemixStudio</td><td onclick='load(9554)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/120265'>Blazevoir</a></td><td onclick='load(9554)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(9554)'>Nov 11, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(9554)'><center><b>9.1</b><br/><small>84 votes</small></center></td><td onclick='load(9554)'><center>6,674</center></td><td><center></center></td><td onclick='load(9554)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=5'>Instrumental</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info9554' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/9554'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(21657)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21657"></td><td onclick='load(21657)' class='block'><div class='videoicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21657'>D2</a></td><td onclick='load(21657)'>Camille Saint-saens & FIRST AID<div class='listing-src'>(DJMAX)</div></td><td onclick='load(21657)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/101399'>MoonFragrance</a></td><td onclick='load(21657)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21657)'>Nov 11, 2010<br/><small>Ranked by Starrodkirby86</small></td><td onclick='load(21657)'><center><b>9.4</b><br/><small>52 votes</small></center></td><td onclick='load(21657)'><center>5,163</center></td><td><center></center></td><td onclick='load(21657)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=5'>Instrumental</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21657' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21657'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21377)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21377"></td><td onclick='load(21377)' class='block'><div class='videoicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21377'>Revolver</a></td><td onclick='load(21377)'>Aya Kamiki</td><td onclick='load(21377)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/70730'>ykcarrot</a></td><td onclick='load(21377)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(21377)'>Nov 11, 2010<br/><small>Ranked by Alace</small></td><td onclick='load(21377)'><center><b>9.3</b><br/><small>100 votes</small></center></td><td onclick='load(21377)'><center>6,168<br/><small>(2,717/day)</small></center></td><td><center></center></td><td onclick='load(21377)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=5'>Pop</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21377' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21377'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(20159)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/20159"></td><td onclick='load(20159)' class='block'><div class='videoicon'></div><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20159'>WTF?</a></td><td onclick='load(20159)'>OK Go</td><td onclick='load(20159)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/157879'>RandomJibberish</a></td><td onclick='load(20159)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(20159)'>Nov 11, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(20159)'><center><b>5.4</b><br/><small>52 votes</small></center></td><td onclick='load(20159)'><center>1,968<br/><small>(865/day)</small></center></td><td><center></center></td><td onclick='load(20159)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=5'>Pop</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=2'>English</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info20159' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20159'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21276)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21276"></td><td onclick='load(21276)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21276'>El Profe</a></td><td onclick='load(21276)'>Miranda!</td><td onclick='load(21276)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/99269'>Krisom</a></td><td onclick='load(21276)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21276)'>Nov 10, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(21276)'><center>-<br/><small>needs 1 votes</small></center></td><td onclick='load(21276)'><center>2,240<br/><small>(913/day)</small></center></td><td><center></center></td><td onclick='load(21276)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=5'>Pop</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=10'>Spanish</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21276' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21276'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(20892)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/20892"></td><td onclick='load(20892)' class='block'><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20892'>Heavenly Shake</a></td><td onclick='load(20892)'>nam5<div class='listing-src'>(Touhou)</div></td><td onclick='load(20892)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/134572'>Kite</a></td><td onclick='load(20892)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(20892)'>Nov 10, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(20892)'><center><b>9.3</b><br/><small>165 votes</small></center></td><td onclick='load(20892)'><center>12,644<br/><small>(5,061/day)</small></center></td><td><center></center></td><td onclick='load(20892)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=5'>Instrumental</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info20892' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20892'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21949)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21949"></td><td onclick='load(21949)' class='block'><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21949'>Angel of Darkness (Nightcore Mix)</a></td><td onclick='load(21949)'>Alex C. feat. Yasmin K.<div class='listing-src'>(Nightcore III)</div></td><td onclick='load(21949)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/33599'>osuplayer111</a></td><td onclick='load(21949)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21949)'>Nov 10, 2010<br/><small>Ranked by Mafiamaster</small></td><td onclick='load(21949)'><center><b>9.5</b><br/><small>174 votes</small></center></td><td onclick='load(21949)'><center>15,691<br/><small>(4,856/day)</small></center></td><td><center></center></td><td onclick='load(21949)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=10'>Techno</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=2'>English</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21949' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21949'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(21841)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21841"></td><td onclick='load(21841)' class='block'><div class='videoicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21841'>No buts! (TV Size)</a></td><td onclick='load(21841)'>Kawada Mami<div class='listing-src'>(To Aru Majutsu no Index II)</div></td><td onclick='load(21841)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/2363'>DJPop</a></td><td onclick='load(21841)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21841)'>Nov  9, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(21841)'><center><b>9.3</b><br/><small>266 votes</small></center></td><td onclick='load(21841)'><center>29,235<br/><small>(8,542/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(21841)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21841' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21841'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21783)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21783"></td><td onclick='load(21783)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21783'>Destiny Girl (TV Size)</a></td><td onclick='load(21783)'>Minato<div class='listing-src'>(009-1)</div></td><td onclick='load(21783)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/186243'>Louis Cyphre</a></td><td onclick='load(21783)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(21783)'>Nov  9, 2010<br/><small>Ranked by minyeob</small></td><td onclick='load(21783)'><center><b>8.7</b><br/><small>60 votes</small></center></td><td onclick='load(21783)'><center>4,308<br/><small>(989/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(21783)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21783' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21783'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(21791)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21791"></td><td onclick='load(21791)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21791'>REACH THE SKY (Orbit1 remix)</a></td><td onclick='load(21791)'>TAYA<div class='listing-src'>(Dance Dance Revolution Hottest Party 2)</div></td><td onclick='load(21791)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/139493'>ouranhshc</a></td><td onclick='load(21791)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21791)'>Nov  8, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(21791)'><center><b>9.1</b><br/><small>97 votes</small></center></td><td onclick='load(21791)'><center>8,555<br/><small>(1,880/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(21791)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=2'>English</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21791' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21791'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(19258)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/19258"></td><td onclick='load(19258)' class='block'><div class='videoicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19258'>Chousai Kenbo Sengen</a></td><td onclick='load(19258)'>MOSAIC.WAV<div class='listing-src'>(Kyouran Kazoku Nikki)</div></td><td onclick='load(19258)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/17695'>Mafiamaster</a></td><td onclick='load(19258)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(19258)'>Nov  8, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(19258)'><center><b>8.7</b><br/><small>78 votes</small></center></td><td onclick='load(19258)'><center>11,295<br/><small>(2,156/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(19258)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info19258' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19258'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(19826)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/19826"></td><td onclick='load(19826)' class='block'><div class='storyicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19826'>Mayonaka*Sukaidaibu</a></td><td onclick='load(19826)'>SOUND HOLIC<div class='listing-src'>(Touhou)</div></td><td onclick='load(19826)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/352804'>Licnect</a></td><td onclick='load(19826)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(19826)'>Nov  8, 2010<br/><small>Ranked by Alace</small></td><td onclick='load(19826)'><center><b>9.3</b><br/><small>223 votes</small></center></td><td onclick='load(19826)'><center>16,121<br/><small>(3,052/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(19826)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info19826' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19826'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21400)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21400"></td><td onclick='load(21400)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21400'>Fu Ta Ri (Kasugano Sora Ver.)</a></td><td onclick='load(21400)'>Shiranami Haruka<div class='listing-src'>(Haruka no Sora)</div></td><td onclick='load(21400)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/310747'>KanaRin</a></td><td onclick='load(21400)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(21400)'>Nov  7, 2010<br/><small>Ranked by Mafiamaster</small></td><td onclick='load(21400)'><center><b>9.4</b><br/><small>200 votes</small></center></td><td onclick='load(21400)'><center>11,468<br/><small>(2,107/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(21400)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21400' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21400'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(18840)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/18840"></td><td onclick='load(18840)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/18840'>Lovely Sister LOVE</a></td><td onclick='load(18840)'>Madoka Yonezawa<div class='listing-src'>(K-ON!!)</div></td><td onclick='load(18840)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/126664'>indyinyou</a></td><td onclick='load(18840)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(18840)'>Nov  7, 2010<br/><small>Ranked by Shinxyn</small></td><td onclick='load(18840)'><center><b>9.4</b><br/><small>182 votes</small></center></td><td onclick='load(18840)'><center>9,791<br/><small>(1,688/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(18840)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info18840' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/18840'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(20017)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/20017"></td><td onclick='load(20017)' class='block'><div class='videoicon'></div><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20017'>Over Sky (TV Size)</a></td><td onclick='load(20017)'>STRIKE WITCHES 2</td><td onclick='load(20017)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/2363'>DJPop</a></td><td onclick='load(20017)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(20017)'>Nov  7, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(20017)'><center><b>9.2</b><br/><small>197 votes</small></center></td><td onclick='load(20017)'><center>16,193<br/><small>(2,572/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(20017)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info20017' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/20017'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(19976)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/19976"></td><td onclick='load(19976)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19976'>The Clear Blue Sky</a></td><td onclick='load(19976)'>Tsukasa<div class='listing-src'>(DJMax TECHNIKA)</div></td><td onclick='load(19976)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/157177'>Natteke</a></td><td onclick='load(19976)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/hard.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> </td><td onclick='load(19976)'>Nov  7, 2010<br/><small>Ranked by osuplayer111</small></td><td onclick='load(19976)'><center><b>9.2</b><br/><small>127 votes</small></center></td><td onclick='load(19976)'><center>10,708<br/><small>(1,696/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(19976)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=2'>English</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info19976' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19976'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row1p' onmouseout='shrinkRows()' onmouseover='expandRow(21471)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/21471"></td><td onclick='load(21471)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21471'>Rox 300</a></td><td onclick='load(21471)'>Anamanaguchi<div class='listing-src'>(Scott Pilgrim vs The World: The Game)</div></td><td onclick='load(21471)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/43108'>Sushi</a></td><td onclick='load(21471)' width=96><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(21471)'>Nov  6, 2010<br/><small>Ranked by Larto</small></td><td onclick='load(21471)'><center><b>8.9</b><br/><small>82 votes</small></center></td><td onclick='load(21471)'><center>5,777<br/><small>(898/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(21471)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=2'>Video Game</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=5'>Instrumental</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info21471' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/21471'>Scores & Details</a>| Login for more options!</div></td></tr>
+<tr class='row2p' onmouseout='shrinkRows()' onmouseover='expandRow(19618)'><td  width=80><img class='bmlistt' src="http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/map-thumb/19618"></td><td onclick='load(19618)' class='block'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19618'>Dondake Fanfare</a></td><td onclick='load(19618)'>Hirano Aya<div class='listing-src'>(Lucky Star)</div></td><td onclick='load(19618)'><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/u/99269'>Krisom</a></td><td onclick='load(19618)' width=96><br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/easy.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/normal.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane.png'/> <br/><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/insane-t.png'/> </td><td onclick='load(19618)'>Nov  6, 2010<br/><small>Ranked by Shinxyn</small></td><td onclick='load(19618)'><center><b>9.1</b><br/><small>178 votes</small></center></td><td onclick='load(19618)'><center>11,383<br/><small>(1,669/day)</small></center></td><td><center><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/packlist/?n=S291'><img src='http://web.archive.org/web/20101113020143im_/http://osu.ppy.sh/images/tick.png' /><br />S291</a></center></td><td onclick='load(19618)' ><a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?g=3'>Anime</a><br/>(<a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?la=3'>Japanese</a>)</td></tr><tr><td colspan=10><div class='expandableInfo' id='info19618' style='display:none'><b>Quick Links:</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/s/19618'>Scores & Details</a>| Login for more options!</div></td></tr>
+
+</table>
+
+<div class="pagination"><b>1</b> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=2'>2</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=3'>3</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=4'>4</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=5'>5</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=6'>6</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=7'>7</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=8'>8</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=9'>9</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=10'>10</a>  ... <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=196'>196</a> <a href='http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist?l=1&amp;r=0&amp;q=&amp;g=0&amp;la=0&amp;s=4&amp;o=1&amp;page=2'>Next</a></div>
+
+				<div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <table width=100%>
+			<tr>
+			<td width=33%></td>
+			<td width=33% align=middle>osu! is © peppy 2007-2010</td>
+			<td width=34% align=right><a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/terms">Terms of Service</a> | <a href="http://web.archive.org/web/20101113020143/http://osu.ppy.sh/p/copyright">Copyright</a></td>
+			</tr>
+			</table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20101113020143/https://ssl." : "/web/20101113020143/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4774947-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20101113020143js_/http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</body>
+
+<!-- Mirrored from web.archive.org/web/20101113020143/http://osu.ppy.sh/p/beatmaplist by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 2:01:43 lis 13, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:15:41 lut 4, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from web.archive.org/web/20071127023324/http://osu.ppy.sh/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Feb 2017 18:49:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+<script type="text/javascript" src="http://web.archive.org/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=235;</script>
+<link type="text/css" rel="stylesheet" href="http://web.archive.org/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="osu! An Ouendan / Elite Beat Agents Windows Simulator" />
+<meta name="keywords" content="osu, ouendan, elite, beat, agents, ds, windows, game, xna, ddr, beatmania" />
+<link rel="stylesheet" href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/style.css" type="text/css" media="all" />
+<title>osu!</title>
+</head>
+
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="http://web.archive.org/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://web.archive.org/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://osu.ppy.sh/";
+
+var firstYear = 1996;
+var displayDay = "27";
+var displayMonth = "lis";
+var displayYear = "2007";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="https://s.ppy.sh/images/head-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="http://web.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://osu.ppy.sh/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20071127023324" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20071022041445/http://osu.ppy.sh/" title="22 paź 2007">PAŹ</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 2:33:24 lis 27, 2007">LIS</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20071228041552/http://osu.ppy.sh/" title="28 gru 2007"><strong>GRU</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20071121044138/http://osu.ppy.sh/" title="4:41:38 lis 21, 2007"><img src="http://web.archive.org/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 2:33:24 lis 27, 2007">27</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="http://web.archive.org/web/20071202081903/http://osu.ppy.sh/" title="8:19:03 gru 2, 2007"><img src="http://web.archive.org/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2006
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 2:33:24 lis 27, 2007">2007</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="http://web.archive.org/web/20081204011050/http://osu.ppy.sh/" title="4 gru 2008"><strong>2008</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="http://web.archive.org/web/20071127023324*/http://osu.ppy.sh/" title="See a list of every capture for this URL">812 captures</a>
+           <div class="r" title="Timespan for captures of this URL">11 paź 07 - 1 lut 17</div>
+       </td>
+       <td class="k">
+       <a href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="http://web.archive.org/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:10:000000000555_2008:-1:444243f0aa77_2009:-1:292200000000_2010:-1:121000005022_2011:-1:242324174a96_2012:-1:8a7975277465_2013:-1:9122825654ae_2014:-1:d639baa98bdc_2015:-1:acbab999acbb_2016:-1:cbddb4592a13_2017:-1:410000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="header"><span id="osu><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="/web/20071127023324oe_/http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="108" height="104" id="osu" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="osu.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#eae8e3" /><embed src="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/osu.swf" quality="high" wmode="transparent" bgcolor="#eae8e3" width="108" height="104" name="osu" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object></span>
+<h1>osu!</h1><br /><span class="sub_title">the coolest ouendan/eba simulator and editor around</span></a><br/>
+<div id="navcontainer"><br />
+    <ul id="navlist">
+        <li id="active"><a href="index.html">News</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=about">About</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=changelog">Changelog</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=download">Download</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=faq">FAQ</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=ranking">Beatmap Listing</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=player">Player Ranking</a></li>
+        <li><a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/">Community</a></li>
+    </ul>
+</div>
+
+
+</div>
+
+<div id="content">
+    <div id="article">
+	<span class="subject">osu! b160 public<br /></span>
+	<span class="byline"><img height="32" width="32" src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/forum/download.php?avatar=2_1188280579.png" alt="" /> <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/memberlist.php?mode=viewprofile&amp;u=2%5C">peppy</a><br />Sunday 25th of November 2007 01:38:37 PM.<br /><br /></span> 
+	<span class="message">Wooooo finally!  Here is a brief list of features that have been added.  See the changelog for the uncensored stuff.<br /><br />(+) New timing control screen.<br />(+) osu! associates itself with .osz files, and can load them by double-clicking a beatmap file directly!<br />(+) Samplesets can be defined per timing section.<br />(+) In-game song rating system.<br />(+) Time signature support added.<br />(+) Replay control buttons.<br />(+) Auto chat login/hiding.<br />(+) Audio controls on main menu.<br />(+) Full chat mode &amp; Spectator mode.<br />(+) Ghost S/SS rankings (for hidden mode achievements).<br />(*) eyupstars v1.1 (currently in osu! only - no web support).<br />(*) Editor improvements all-round.<br />(*) New icons to show what status a beatmap has in song selection.<br />(*) Many improvements to gameplay accuracy.<br />(*) Many many many many many bug fixes.<br />(*) Fixed slider tick PC reboot bug.<br /><br />I'll add some screenshots here soon.</span>
+	<span class="links"></span>
+</div>
+<div id="article">
+	<span class="subject">b140 public release<br /></span>
+	<span class="byline"><img height="32" width="32" src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/forum/download.php?avatar=2_1188280579.png" alt="" /> <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/memberlist.php?mode=viewprofile&amp;u=2%5C">peppy</a><br />Saturday 10th of November 2007 04:30:26 PM.<br /><br /></span> 
+	<span class="message">This release marks a few large milestones for osu!.  The major addition this time is the integrated forum/beatmap submission process, allowing anyone to submit their custom beatmaps with a couple of clicks.  File uploads and forum posts are all handled automatically in an intuitive way.  Read more about this <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/viewtopic.php?f=2&amp;t=835" target="_blank">here</a>.<br /><br />A full list of new features since last release:<br /><ul class="listbullet"><br /><li>Integrated chat support.<br /><li>Song selection tabs with dynamic searching.<br /><li>Many game graphical enhancements.<br /><li>Beatmap Submission System.<br /><li>Huge optimisations to code increase performance by over 100%.<br /><li>Many bug fixes and changes to make things more playable and accurate.</ul><br /><br /><img src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/songselection.jpg" alt="" /><br /></span>
+	<span class="links"></span>
+</div>
+<div id="article">
+	<span class="subject">An update on things!<br /></span>
+	<span class="byline"><img height="32" width="32" src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/forum/download.php?avatar=2_1188280579.png" alt="" /> <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/memberlist.php?mode=viewprofile&amp;u=2%5C">peppy</a><br />Friday 19th of October 2007 04:05:53 PM.<br /><br /></span> 
+	<span class="message"><img src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/img/osu2.jpg" alt="" /><br /><br /><br />First of all, welcome to all the people who have arrived from Joystiq - and thanks to Joystiq for <a href="http://web.archive.org/web/20071127023324/http://www.joystiq.com/2007/10/18/free-pc-ouendan-eba-emulator-hits-public-beta/" target="_blank">featuring osu!</a>.  I've been so busy with coding and web stuff that I haven't got around to updating the frontpage since... well lets say a while.  With the newest release comes a whole heap of goodness which you can read more about in the changelog if you are interested.<br /><br />I have spent a fair amount of time recently working on the site itself - making it as user-friendly as possible.  You should find the new <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=ranking" target="_blank">Beatmap Listing</a> page to be very useful in finding beatmaps that suit you.  It can now be sorted by many fields and will soon be searchable.  The <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=about" target="_blank">about</a> and <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=faq" target="_blank">FAQ</a> pages also feature new content - check it out!<br /><br />Ok, I am hesitant to put a timeframe on these <b>coming soon</b> features, but if you have been around here a while, you will trust in it not being far off!<br /><br /><b>Features that you will see in the near future:</b><br /><ul class="listbullet"><br /><li><b>New song selection screen</b> allowing sorting, favourites and multiple levels of directories for more organisation.  The list is getting so big we need this kind of functionality - you requested, I provide.  Hopefully by Sunday.<br /><li><b>Storyboarding</b>.  Its coming, I promise.  There's a lot to be done in this area, but once I make a start on it, things should pick up bit-by-bit.<br /><li><b>Song Packaging Integration</b>.  I kind've want to put this at a higher priority than storyboarding, but we'll see how things go.  This will allow uploading your beatmap creations from in-game, with full forum and ranking approval integration.  It should make things just a bit more streamlined.</ul><br /><br />I sincerely hope we get some more regular players and mappers coming in so we can build this community into something to be proud of <!-- s:D --><img src="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /><!-- s:D -->.</span>
+	<span class="links"></span>
+</div>
+<div id="article">
+	<span class="subject">Public Beta Build b86<br /></span>
+	<span class="byline"><img height="32" width="32" src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/forum/download.php?avatar=2_1188280579.png" alt="" /> <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/memberlist.php?mode=viewprofile&amp;u=2%5C">peppy</a><br />Thursday 04th of October 2007 10:27:54 PM.<br /><br /></span> 
+	<span class="message"><object width="512" height="384"><param name="movie" value="http&#58;//www&#46;youtube&#46;com/v/v7pIPYNeTDA"><embed src="http://web.archive.org/web/20071127023324oe_/http://www.youtube.com/v/v7pIPYNeTDA" width="550" height="400"></embed></object><br /><br />The new major public release is up!  Get to the updating and enjoy this wide range of new features:<br /><br /><ul class="listbullet"><br /><li>Basic online ranking (Available soon!)<br /><li>Rank system improved<br /><li>Ability to review and replay achieved scores. (Click them on the song selection screen)<br /><li>Ability to insert breaks in edit mode (automatically detects silence between 2 far-away notes).<br /><li>Skip button added in play mode! Jumps to 4 beats before the first note.<br /><li>Pause button added in play mode! (hit Escape in-game)<br /><li>New graphic changes include ouendan-style feedback for spinners and a rotating ball for sliders. (thanks to Kylecito)<br /><li>Song list improved. Unplayed songs now appear as green<br /><li>Tick rate option added for sliders in &quot;TIMING&quot; section of editor.<br /><li>New background features in design mode!<br /><li>Major amendments to make the game's scoring and systematics to make it feel a lot closer to ouendan. (thanks to Asho)</ul><br /><br /><img src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/img/b86.png"><br /></span>
+	<span class="links"></span>
+</div>
+<div id="article">
+	<span class="subject">osu! - Beta Release now available!<br /></span>
+	<span class="byline"><img height="32" width="32" src="http://web.archive.org/web/20071127023324im_/http://osu.ppy.sh/forum/download.php?avatar=2_1188280579.png" alt="" /> <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/memberlist.php?mode=viewprofile&amp;u=2%5C">peppy</a><br />Monday 24th of September 2007 10:34:32 AM.<br /><br /></span> 
+	<span class="message">osu! is a rhythm game based on the gameplay of the Nintendo DS series Osu! Tatakae! Ouendan! and its overseas counterpart Elite Beat Agents.  <br /><br />With a fully functional in-built editor and a quickly growing library of beatmaps, there is definitely enjoyment waiting for both players and composers.<br /><br /><object width="530" height="370"><param name="movie" value="http&#58;//www&#46;youtube&#46;com/p/385B26C7B1103914"><embed src="http://web.archive.org/web/20071127023324oe_/http://www.youtube.com/p/385B26C7B1103914" width="550" height="400"></embed></object><br /><br />Follow instructions on <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=download" target="_blank">this page</a> to download the latest public beta!<br />While you are waiting for the download to complete, join the expanding community at <a href="http://web.archive.org/web/20071127023324/http://osu.ppy.sh/forum/" target="_blank">the forums</a>.</span>
+	<span class="links"></span>
+</div>
+</div>
+<div id="article">
+<span class="links">hosting by <a href="http://web.archive.org/web/20071127023324/http://www.bravegamer.com/">bravenewgames</a>.  &copy peppy 2007</span></div></body>
+
+<!-- Mirrored from web.archive.org/web/20071127023324/http://osu.ppy.sh/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Feb 2017 18:49:22 GMT -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 2:33:24 lis 27, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:49:13 lut 3, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

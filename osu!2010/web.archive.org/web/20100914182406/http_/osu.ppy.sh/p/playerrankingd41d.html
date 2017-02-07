@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+
+<!-- Mirrored from web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking? by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+<script type="text/javascript" src="http://web.archive.org/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app6.us.archive.org";archive_analytics.values.server_ms=140;</script>
+<link type="text/css" rel="stylesheet" href="http://web.archive.org/static/css/banner-styles.css"/>
+
+
+<link rel="shortcut icon" href="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="http://web.archive.org/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="osu! - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor." />
+<meta name="keywords" content="osu, peppy, ouendan, elite, beat, agents, ds, windows, game, taiko, tatsujin, simulator, sim, xna, ddr, beatmania, osu!, osume" />
+
+<link rel="stylesheet" type="text/css" href="http://web.archive.org/web/20100914182406cs_/http://osu.ppy.sh/css/style2.css" media="all" />
+<script type="text/javascript" src="http://web.archive.org/web/20100914182406js_/http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20100914182406js_/http://osu.ppy.sh/js/main.js"></script>
+<title>osu! - Player Ranking (osu!)</title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="http://web.archive.org/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://web.archive.org/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://osu.ppy.sh/p/playerranking?";
+
+var firstYear = 1996;
+var displayDay = "14";
+var displayMonth = "wrz";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="https://s.ppy.sh/images/head-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="http://web.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://osu.ppy.sh/p/playerranking?" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100914182406" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20100207194753/http://osu.ppy.sh/p/playerranking" title="7 lut 2010">LUT</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 18:24:06 wrz 14, 2010">WRZ</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20110423224541/http://osu.ppy.sh/p/playerranking/?" title="23 kwi 2011"><strong>KWI</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20100910025619/http://osu.ppy.sh/p/playerranking" title="2:56:19 wrz 10, 2010"><img src="http://web.archive.org/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 18:24:06 wrz 14, 2010">14</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="http://web.archive.org/web/20110423224541/http://osu.ppy.sh/p/playerranking/?" title="22:45:41 kwi 23, 2011"><img src="http://web.archive.org/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20090423203926/http://osu.ppy.sh/p/playerranking" title="23 kwi 2009"><strong>2009</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 18:24:06 wrz 14, 2010">2010</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="http://web.archive.org/web/20110923151053/http://osu.ppy.sh/p/playerranking" title="23 wrz 2011"><strong>2011</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="http://web.archive.org/web/20100914182406*/http://osu.ppy.sh/p/playerranking?" title="See a list of every capture for this URL">202 captures</a>
+           <div class="r" title="Timespan for captures of this URL">20 sty 09 - 3 lut 17</div>
+       </td>
+       <td class="k">
+       <a href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="http://web.archive.org/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:2b3200000000_2010:8:010000003000_2011:-1:000144083853_2012:-1:034793223323_2013:-1:301220242500_2014:-1:122003120200_2015:-1:135020223113_2016:-1:527523621622_2017:-1:210000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<a name="top"></a>
+
+
+
+<div class="bodytopbg">
+    <div class="mainbody"><div class="mainbody2">
+		<div id="coolheader" style="background-image: url('http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/right-j.jpg');"></div>
+		<div id="donation">
+			<a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/support'><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/paypal.gif'/></a>
+		</div>
+         <div class="header">
+			<div id="playstats">
+                <b>431,858</b> users, <b>1,198</b> online now.<br />
+                A total of <b><span id='playcount'>175,348,186</span></b> ranked plays!
+            </div>
+        <div class="menu">
+            <ul class="sf-menu">
+                <li id="current"><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/">Home</a></li>
+                <li>
+                    <a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/about">Info</a>
+                    <ul>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/about">The Game (PC)</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/iphone">The Game (iPhone)</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/team">The Team</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/screenshots">Screenshots</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/changelog">Changelog</a></li>
+						
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/download">Download</a></li>
+                <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/faq">Help!</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/faq">FAQ</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/formatpost&amp;id=21575">Terms Glossary</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/viewtopic.php?f=13&amp;t=3815">Video Tutorials</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/viewtopic.php?f=5&amp;t=576">Report a Bug</a></li>
+                    </ul> 
+				</li>
+                <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/beatmaplist">Beatmaps</a>
+                    <ul>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=0">Ranked</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=6">Approved</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/beatmaplist&amp;s=7&amp;r=2">Pending</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/packlist">Beatmap Packs</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking">Rankings</a>
+                    <ul> 
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking">Overall Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/chart">Ranking Charts</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/countryranking">Countries</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/mapperranking">Mapper Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/modranking">BAT Ranking</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/kudosu">Kudosu Ranking</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/">Community</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/">Forums</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/support">Supporting osu!</a></li>
+                        <li><a href="http://web.archive.org/web/20100914182406/http://www.cafepress.com/osume" target="_blank">Goodies</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://youtube.com/groups_videos?name=osume" target="_blank">Videos</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/chat" target="_blank">Web Chat</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/gallery?g=fanart">Fanart</a></li>
+						<li><a href="http://web.archive.org/web/20100914182406/http://up.ppy.sh/">upppy!</a></li>
+                    </ul>
+				</li>
+            </ul>
+        </div>
+        </div>
+                <div class="content">
+                <div class="content-infoline">
+                    <div style="float:left">
+						<form class="inline-form" action="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/search" id="cse-search-box">
+						  <div>
+							<input type="hidden" name="cx" value="007714945049801807819:fwdivvi5sik" />
+							<input type="hidden" name="cof" value="FORID:10" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="text" name="q" size="16" />
+						  </div>
+						</form>
+						<form class="inline-form" onsubmit="return userSearch()">
+							<input type="text" class="default" name="user-search" id="user-search" size="12" title="User" />
+						</form>
+						<form class="inline-form" onsubmit="return beatmapSearch()">
+							<input type="text" class="default" name="beatmap-search" id="beatmap-search" size="12" title="Beatmap" />
+						</form>
+					</div>
+									<form action="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/ucp.php?mode=login" method="post">
+						<b>user:</b> 
+						<input class="post" type="text" name="username" size="15" maxlength="40" value="" tabindex="0" /> 
+						<b>pass:</b> 
+						<input class="post" type="password" name="password" size="15" maxlength="100" tabindex="0" />
+						<a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/ucp.php?mode=sendpassword" title="Forgot Password">?</a> <a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/forum/ucp.php?mode=register" title="Register New Account">register</a>
+						<input type="checkbox" class="radio" name="autologin"/> <label for="autologin">save</label>
+						<input type="hidden" name="redirect" value="/p/playerranking?" />
+						<input type="hidden" name="sid" value="261f71bf09ee8d92a7b1871368dce430" />
+						<input type="submit" name="login" value="login" tabindex="5" />
+					</form>
+				                </div>
+
+
+
+<h1>Player Rankings for All Locations (osu!)</h1>
+
+<div class="paddingboth">The primary ranking is the "Ranked Score".  This is calculated based on the highest score achieved from each beatmap set.  This means that if you play multiple difficulties of the same beatmap, only the <b>highest</b> score you achieve will be included in your ranked score.  To search for a particular username, use the search below.</div>
+
+<div style="padding-top:10px;"><center>
+	<b>Please login to use search functionality.</b><br/><br/>
+</center></div>
+
+<center>
+</center>
+
+<div id='tablist'>
+	<ul>
+		<li><a class="active" href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0'>osu! Standard</a></li>
+		<li><a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=1'>Taiko</a></li>
+		<li><a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=2'>Catch The Beat</a></li>
+	</ul>
+</div>
+
+<div class="pagination">Displaying 1 to 50 of 10000 results.<br/><b>1</b> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=2'>2</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=3'>3</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=4'>4</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=5'>5</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=6'>6</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=7'>7</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=8'>8</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=9'>9</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=10'>10</a>  ... <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=2'>Next</a></div>
+<table class="beatmapListing" cellspacing=0>
+<tr>
+	<th>Rank</th>
+	<th>Change</th>	<th>Player Name</th>
+	<th><a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=0&amp;r=&amp;q=&amp;f='>Accuracy</a></th>
+	<th><a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=1&amp;r=&amp;q=&amp;f='>Play Count</a></th>
+	<th><a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=2&amp;r=&amp;q=&amp;f='>Total Score (level)</a></th>
+	<th><a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=0&amp;r=&amp;q=&amp;f='>Ranked Score</a><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/down.gif" /></th>
+	<th><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/X_small.png"/><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/XH_small.png"/></th>
+	<th><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/S_small.png"/><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/SH_small.png"/></th>
+	<th><img src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/A_small.png"/></th>
+</tr>
+
+<tr class='row1p' onclick='document.location=&quot;/u/79678&quot;'><td><b>#1</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/79678'>Harder</a></td><td>98.6783%</td><td><span>60,646</span></td><td><span>98,006,855,718 (100)</span></td><td><span style='font-weight:bold'>20,211,696,256</span></td><td align='center'>733</td><td align='center'>4,024</td><td align='center'>112</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/18983&quot;'><td><b>#2</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/gb.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/18983'>Doomsday</a></td><td>97.8563%</td><td><span>93,075</span></td><td><span>86,717,753,777 (100)</span></td><td><span style='font-weight:bold'>19,568,696,439</span></td><td align='center'>352</td><td align='center'>3,286</td><td align='center'>439</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/88717&quot;'><td><b>#3</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/88717'>Ana_Coppola</a></td><td>99.0249%</td><td><span>74,397</span></td><td><span>135,834,744,342 (101)</span></td><td><span style='font-weight:bold'>19,568,601,578</span></td><td align='center'>2,128</td><td align='center'>3,969</td><td align='center'>3</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/33599&quot;'><td><b>#4</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/it.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/33599'>osuplayer111</a></td><td>99.119%</td><td><span>35,341</span></td><td><span>67,737,581,081 (100)</span></td><td><span style='font-weight:bold'>19,526,132,611</span></td><td align='center'>1,553</td><td align='center'>4,210</td><td align='center'>20</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/104827&quot;'><td><b>#5</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/th.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/104827'>orioncomet</a></td><td>95.0372%</td><td><span>61,007</span></td><td><span>74,937,500,637 (100)</span></td><td><span style='font-weight:bold'>19,226,878,017</span></td><td align='center'>134</td><td align='center'>3,770</td><td align='center'>1,348</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/70730&quot;'><td><b>#6</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/kr.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/70730'>ykcarrot</a></td><td>98.5616%</td><td><span>63,463</span></td><td><span>99,333,518,125 (100)</span></td><td><span style='font-weight:bold'>19,155,357,981</span></td><td align='center'>785</td><td align='center'>4,108</td><td align='center'>174</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/58710&quot;'><td><b>#7</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/uy.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/58710'>H1ko</a></td><td>99.5521%</td><td><span>78,404</span></td><td><span>117,389,449,512 (100)</span></td><td><span style='font-weight:bold'>18,352,208,579</span></td><td align='center'>2,980</td><td align='center'>1,347</td><td align='center'>28</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/72139&quot;'><td><b>#8</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/72139'>kaouji</a></td><td>94.9264%</td><td><span>54,007</span></td><td><span>61,975,205,328 (100)</span></td><td><span style='font-weight:bold'>18,340,515,378</span></td><td align='center'>160</td><td align='center'>4,048</td><td align='center'>1,721</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/135567&quot;'><td><b>#9</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/135567'>lzy</a></td><td>96.7345%</td><td><span>25,290</span></td><td><span>47,398,535,714 (100)</span></td><td><span style='font-weight:bold'>17,920,892,361</span></td><td align='center'>104</td><td align='center'>3,340</td><td align='center'>736</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/147623&quot;'><td><b>#10</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/tw.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/147623'>Uan</a></td><td>97.7799%</td><td><span>74,703</span></td><td><span>76,605,442,407 (100)</span></td><td><span style='font-weight:bold'>17,604,873,364</span></td><td align='center'>1,218</td><td align='center'>3,393</td><td align='center'>236</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/12143&quot;'><td><b>#11</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/tw.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/12143'>f0012979</a></td><td>98.1147%</td><td><span>62,505</span></td><td><span>78,479,769,728 (100)</span></td><td><span style='font-weight:bold'>16,709,240,036</span></td><td align='center'>610</td><td align='center'>3,028</td><td align='center'>318</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/29130&quot;'><td><b>#12</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/29130'>kuburaczek</a></td><td>98.3416%</td><td><span>45,219</span></td><td><span>61,666,521,251 (100)</span></td><td><span style='font-weight:bold'>16,489,065,054</span></td><td align='center'>400</td><td align='center'>3,570</td><td align='center'>196</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/211278&quot;'><td><b>#13</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/211278'>Flute</a></td><td>98.3584%</td><td><span>43,064</span></td><td><span>56,363,315,552 (100)</span></td><td><span style='font-weight:bold'>16,373,234,182</span></td><td align='center'>526</td><td align='center'>3,126</td><td align='center'>222</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/17695&quot;'><td><b>#14</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/us.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/17695'>Mafiamaster</a></td><td>96.7097%</td><td><span>16,645</span></td><td><span>32,101,104,676 (100)</span></td><td><span style='font-weight:bold'>16,368,862,996</span></td><td align='center'>133</td><td align='center'>2,978</td><td align='center'>797</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/39828&quot;'><td><b>#15</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/39828'>White Wolf</a></td><td>98.2811%</td><td><span>52,034</span></td><td><span>67,444,174,163 (100)</span></td><td><span style='font-weight:bold'>16,348,620,297</span></td><td align='center'>1,008</td><td align='center'>3,096</td><td align='center'>463</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/73453&quot;'><td><b>#16</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/73453'>taka1235</a></td><td>97.4973%</td><td><span>41,850</span></td><td><span>59,876,645,565 (100)</span></td><td><span style='font-weight:bold'>15,328,935,922</span></td><td align='center'>294</td><td align='center'>2,209</td><td align='center'>778</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/49131&quot;'><td><b>#17</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/49131'>akX</a></td><td>99.2667%</td><td><span>30,821</span></td><td><span>41,225,412,164 (100)</span></td><td><span style='font-weight:bold'>15,024,649,978</span></td><td align='center'>1,265</td><td align='center'>2,860</td><td align='center'>147</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/59650&quot;'><td><b>#18</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/hu.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/59650'>tasli</a></td><td>96.9849%</td><td><span>30,047</span></td><td><span>46,894,894,579 (100)</span></td><td><span style='font-weight:bold'>14,789,965,084</span></td><td align='center'>508</td><td align='center'>2,934</td><td align='center'>220</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/112265&quot;'><td><b>#19</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/112265'>klubek</a></td><td>98.6137%</td><td><span>25,022</span></td><td><span>44,241,521,203 (100)</span></td><td><span style='font-weight:bold'>14,633,561,657</span></td><td align='center'>823</td><td align='center'>7,197</td><td align='center'>52</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/108066&quot;'><td><b>#20</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/th.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/108066'>S i R i R u</a></td><td>94.4136%</td><td><span>43,297</span></td><td><span>97,348,318,607 (100)</span></td><td><span style='font-weight:bold'>14,378,466,116</span></td><td align='center'>286</td><td align='center'>2,243</td><td align='center'>730</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/29089&quot;'><td><b>#21</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/fi.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/29089'>Sutsuka</a></td><td>96.2107%</td><td><span>34,799</span></td><td><span>40,973,042,354 (100)</span></td><td><span style='font-weight:bold'>14,266,570,714</span></td><td align='center'>525</td><td align='center'>2,859</td><td align='center'>620</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/127777&quot;'><td><b>#22</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/fi.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/127777'>morovaa</a></td><td>96.7262%</td><td><span>30,817</span></td><td><span>38,670,394,940 (100)</span></td><td><span style='font-weight:bold'>14,159,294,018</span></td><td align='center'>342</td><td align='center'>2,042</td><td align='center'>865</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/101025&quot;'><td><b>#23</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 4</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/101025'>LirsRosso</a></td><td>98.3026%</td><td><span>26,044</span></td><td><span>39,987,832,644 (100)</span></td><td><span style='font-weight:bold'>14,070,420,461</span></td><td align='center'>308</td><td align='center'>2,423</td><td align='center'>188</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/64501&quot;'><td><b>#24</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/us.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/64501'>Lybydose</a></td><td>97.4973%</td><td><span>48,200</span></td><td><span>76,781,386,024 (100)</span></td><td><span style='font-weight:bold'>14,069,055,634</span></td><td align='center'>151</td><td align='center'>2,405</td><td align='center'>244</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/16963&quot;'><td><b>#25</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/16963'>Ryohan</a></td><td>97.1964%</td><td><span>43,136</span></td><td><span>47,804,458,915 (100)</span></td><td><span style='font-weight:bold'>13,919,729,924</span></td><td align='center'>135</td><td align='center'>3,377</td><td align='center'>461</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/42585&quot;'><td><b>#26</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/pl.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/42585'>SteRRuM</a></td><td>96.3695%</td><td><span>29,810</span></td><td><span>37,819,672,966 (100)</span></td><td><span style='font-weight:bold'>13,657,433,466</span></td><td align='center'>88</td><td align='center'>2,618</td><td align='center'>857</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/44867&quot;'><td><b>#27</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/44867'>Crazy Jay</a></td><td>98.0509%</td><td><span>38,265</span></td><td><span>48,158,198,363 (100)</span></td><td><span style='font-weight:bold'>13,606,924,056</span></td><td align='center'>364</td><td align='center'>2,482</td><td align='center'>407</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/57976&quot;'><td><b>#28</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/fr.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/57976'>Eirene</a></td><td>98.6278%</td><td><span>53,127</span></td><td><span>64,541,761,853 (100)</span></td><td><span style='font-weight:bold'>13,517,885,814</span></td><td align='center'>1,376</td><td align='center'>1,682</td><td align='center'>81</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/6794&quot;'><td><b>#29</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/de.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/6794'>Nharox</a></td><td>98.1593%</td><td><span>20,491</span></td><td><span>34,477,308,440 (100)</span></td><td><span style='font-weight:bold'>13,494,962,639</span></td><td align='center'>115</td><td align='center'>2,643</td><td align='center'>19</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/49579&quot;'><td><b>#30</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/co.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/49579'>j35u5891221</a></td><td>98.2778%</td><td><span>52,676</span></td><td><span>53,815,798,477 (100)</span></td><td><span style='font-weight:bold'>13,040,836,038</span></td><td align='center'>531</td><td align='center'>3,304</td><td align='center'>205</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/71917&quot;'><td><b>#31</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/71917'>swish</a></td><td>97.758%</td><td><span>36,557</span></td><td><span>48,824,135,061 (100)</span></td><td><span style='font-weight:bold'>12,986,249,706</span></td><td align='center'>398</td><td align='center'>3,054</td><td align='center'>182</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/95099&quot;'><td><b>#32</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/95099'>lovehinana</a></td><td>95.6689%</td><td><span>34,797</span></td><td><span>50,201,709,579 (100)</span></td><td><span style='font-weight:bold'>12,985,009,200</span></td><td align='center'>61</td><td align='center'>2,485</td><td align='center'>803</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/124493&quot;'><td><b>#33</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/kr.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/124493'>Cookiezi</a></td><td>97.9385%</td><td><span>49,003</span></td><td><span>82,867,283,179 (100)</span></td><td><span style='font-weight:bold'>12,798,441,237</span></td><td align='center'>213</td><td align='center'>1,724</td><td align='center'>189</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/67951&quot;'><td><b>#34</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/sg.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/67951'>opiomorph</a></td><td>97.2248%</td><td><span>26,224</span></td><td><span>43,200,168,571 (100)</span></td><td><span style='font-weight:bold'>12,784,505,096</span></td><td align='center'>1,220</td><td align='center'>6,085</td><td align='center'>99</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/91742&quot;'><td><b>#35</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/91742'>lxy</a></td><td>97.5352%</td><td><span>73,779</span></td><td><span>63,251,172,739 (100)</span></td><td><span style='font-weight:bold'>12,522,930,277</span></td><td align='center'>106</td><td align='center'>2,106</td><td align='center'>365</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/34044&quot;'><td><b>#36</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/34044'>xierbaliti</a></td><td>97.7857%</td><td><span>56,402</span></td><td><span>60,039,706,928 (100)</span></td><td><span style='font-weight:bold'>12,418,475,468</span></td><td align='center'>628</td><td align='center'>2,211</td><td align='center'>309</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/49853&quot;'><td><b>#37</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/de.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/49853'>eMkay</a></td><td>98.0199%</td><td><span>21,431</span></td><td><span>32,870,303,384 (100)</span></td><td><span style='font-weight:bold'>12,398,880,095</span></td><td align='center'>453</td><td align='center'>3,064</td><td align='center'>355</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/18589&quot;'><td><b>#38</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/us.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/18589'>Cyclone</a></td><td>99.2957%</td><td><span>17,467</span></td><td><span>34,143,213,549 (100)</span></td><td><span style='font-weight:bold'>12,297,042,947</span></td><td align='center'>786</td><td align='center'>1,629</td><td align='center'>182</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/94364&quot;'><td><b>#39</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/94364'>MForever</a></td><td>96.6819%</td><td><span>32,835</span></td><td><span>43,467,697,429 (100)</span></td><td><span style='font-weight:bold'>12,261,360,185</span></td><td align='center'>113</td><td align='center'>1,649</td><td align='center'>541</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/77835&quot;'><td><b>#40</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/ua.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/77835'>Mosya</a></td><td>98.4231%</td><td><span>45,458</span></td><td><span>45,603,063,036 (100)</span></td><td><span style='font-weight:bold'>12,205,348,536</span></td><td align='center'>608</td><td align='center'>2,847</td><td align='center'>323</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/65761&quot;'><td><b>#41</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/de.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/65761'>eMJaReL</a></td><td>97.4827%</td><td><span>32,342</span></td><td><span>38,763,163,143 (100)</span></td><td><span style='font-weight:bold'>12,036,462,127</span></td><td align='center'>155</td><td align='center'>2,732</td><td align='center'>398</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/102333&quot;'><td><b>#42</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 13</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/fr.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/102333'>LongTimeNoC</a></td><td>96.544%</td><td><span>25,983</span></td><td><span>36,719,575,652 (100)</span></td><td><span style='font-weight:bold'>11,796,719,992</span></td><td align='center'>73</td><td align='center'>2,257</td><td align='center'>453</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/37529&quot;'><td><b>#43</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/za.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/37529'>hawkzor</a></td><td>96.8422%</td><td><span>32,482</span></td><td><span>46,378,249,562 (100)</span></td><td><span style='font-weight:bold'>11,767,571,431</span></td><td align='center'>59</td><td align='center'>2,042</td><td align='center'>263</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/108522&quot;'><td><b>#44</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/108522'>3kinnagi</a></td><td>99.1397%</td><td><span>46,964</span></td><td><span>59,158,967,833 (100)</span></td><td><span style='font-weight:bold'>11,706,616,547</span></td><td align='center'>624</td><td align='center'>1,987</td><td align='center'>6</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/107426&quot;'><td><b>#45</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/cn.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/107426'>KanbeKotori</a></td><td>97.4872%</td><td><span>43,618</span></td><td><span>49,704,053,436 (100)</span></td><td><span style='font-weight:bold'>11,699,175,553</span></td><td align='center'>208</td><td align='center'>2,152</td><td align='center'>248</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/216472&quot;'><td><b>#46</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/kr.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/216472'>M A I D</a></td><td>96.3048%</td><td><span>42,310</span></td><td><span>52,689,499,551 (100)</span></td><td><span style='font-weight:bold'>11,606,086,925</span></td><td align='center'>63</td><td align='center'>1,982</td><td align='center'>360</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/125308&quot;'><td><b>#47</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/downarrow.gif' /> 1</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/tw.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/125308'>Tomoka Rin</a></td><td>97.7687%</td><td><span>25,550</span></td><td><span>42,852,153,147 (100)</span></td><td><span style='font-weight:bold'>11,542,015,432</span></td><td align='center'>439</td><td align='center'>2,130</td><td align='center'>517</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/18404&quot;'><td><b>#48</b></td><td><center>-</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/hk.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/18404'>Saturio</a></td><td>97.5785%</td><td><span>35,493</span></td><td><span>33,931,816,258 (100)</span></td><td><span style='font-weight:bold'>11,473,283,483</span></td><td align='center'>196</td><td align='center'>2,315</td><td align='center'>558</td></tr>
+<tr class='row1p' onclick='document.location=&quot;/u/61154&quot;'><td><b>#49</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 2</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/61154'>Rigeru</a></td><td>99.7999%</td><td><span>25,980</span></td><td><span>45,692,542,256 (100)</span></td><td><span style='font-weight:bold'>11,472,669,822</span></td><td align='center'>1,094</td><td align='center'>1,345</td><td align='center'>0</td></tr>
+<tr class='row2p' onclick='document.location=&quot;/u/111097&quot;'><td><b>#50</b></td><td><center><img src='http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/uparrow.gif' /> 3</center></td><td><img class='flag' src="http://web.archive.org/web/20100914182406im_/http://osu.ppy.sh/images/flags/jp.gif" title=""/> <a  href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/u/111097'>uider</a></td><td>98.6113%</td><td><span>81,184</span></td><td><span>125,021,000,397 (100)</span></td><td><span style='font-weight:bold'>11,447,755,365</span></td><td align='center'>380</td><td align='center'>2,103</td><td align='center'>240</td></tr>
+</table>
+
+<div class="pagination"><b>1</b> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=2'>2</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=3'>3</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=4'>4</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=5'>5</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=6'>6</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=7'>7</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=8'>8</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=9'>9</a> <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=10'>10</a>  ... <a href='http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking/?m=0&amp;s=3&amp;o=1&amp;page=2'>Next</a></div>
+
+				<div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <table width=100%>
+			<tr>
+			<td width=33%></td>
+			<td width=33% align=middle>osu! is © peppy 2007-2010</td>
+			<td width=34% align=right><a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/terms">Terms of Service</a> | <a href="http://web.archive.org/web/20100914182406/http://osu.ppy.sh/p/copyright">Copyright</a></td>
+			</tr>
+			</table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20100914182406/https://ssl." : "/web/20100914182406/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4774947-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20100914182406js_/http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</body>
+
+<!-- Mirrored from web.archive.org/web/20100914182406/http://osu.ppy.sh/p/playerranking? by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+</html>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 18:24:06 wrz 14, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:15:43 lut 4, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

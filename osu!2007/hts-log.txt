@@ -1,0 +1,14 @@
+HTTrack3.48-22+htsswf+htsjava launched on Fri, 03 Feb 2017 19:49:12 at http://web.archive.org/web/20071127023324/http://osu.ppy.sh/ http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=about http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=changelog http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=download http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=faq http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=player http://web.archive.org/web/20071123172250/http://osu.ppy.sh/forum/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pl, en, *" http://web.archive.org/web/20071127023324/http://osu.ppy.sh/ http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=about http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=changelog http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=download http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=faq http://web.archive.org/web/20071127023324/http://osu.ppy.sh/index.php?p=player http://web.archive.org/web/20071123172250/http://osu.ppy.sh/forum/ -O1 "C:\osu!web\osu2007web" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:49:22	Warning: 	Note: due to web.archive.org remote robots.txt rules, links beginning with these path will be forbidden: / (see in the options to disable this)
+19:49:23	Warning: 	Found for web.archive.org/web/20071123172250/http://osu.ppy.sh/forum/
+19:49:23	Warning: 	File has moved from web.archive.org/web/20071123172250/http://osu.ppy.sh/forum/ to /web/20071128080340/http://osu.ppy.sh/forum/
+
+HTTrack Website Copier/3.48-22 mirror complete in 11 seconds : 8 links scanned, 6 files written (105996 bytes overall), 6 files updated [53499 bytes received at 4863 bytes/sec], 105996 bytes transferred using HTTP compression in 6 files, ratio 37%, 3.2 requests per connection
+(No errors, 3 warnings, 0 messages)

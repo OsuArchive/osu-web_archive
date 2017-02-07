@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+
+<!-- Mirrored from web.archive.org/web/20110616165443/http://osu.ppy.sh/p/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+<script type="text/javascript" src="http://web.archive.org/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app1.us.archive.org";archive_analytics.values.server_ms=255;</script>
+<link type="text/css" rel="stylesheet" href="http://web.archive.org/static/css/banner-styles.css"/>
+
+
+<link rel="shortcut icon" href="http://web.archive.org/web/20110616165443im_/http://osu.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="http://web.archive.org/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="osu! - Rhythm is just a *click* away!  With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor." />
+<meta name="keywords" content="osu, peppy, ouendan, elite, beat, agents, ds, windows, game, taiko, tatsujin, simulator, sim, xna, ddr, beatmania, osu!, osume" />
+
+<link rel="stylesheet" type="text/css" href="http://web.archive.org/web/20110616165443cs_/http://osu.ppy.sh/css/style.css?20110408" media="all" />
+<script type="text/javascript" src="http://web.archive.org/web/20110616165443js_/http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20110616165443js_/http://osu.ppy.sh/js/main.js"></script>
+<title>osu! - About</title>
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="http://web.archive.org/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://web.archive.org/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://osu.ppy.sh/p/about";
+
+var firstYear = 1996;
+var displayDay = "16";
+var displayMonth = "cze";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="https://s.ppy.sh/images/head-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="http://web.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://osu.ppy.sh/p/about" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110616165443" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20100404084533/http://osu.ppy.sh/p/about?" title="4 kwi 2010">KWI</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:54:43 cze 16, 2011">CZE</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/20110806033651/http://osu.ppy.sh/p/about" title="6 sie 2011"><strong>SIE</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20100404084533/http://osu.ppy.sh/p/about?" title="8:45:33 kwi 4, 2010"><img src="http://web.archive.org/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:54:43 cze 16, 2011">16</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="http://web.archive.org/web/20110806033651/http://osu.ppy.sh/p/about" title="3:36:51 sie 6, 2011"><img src="http://web.archive.org/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="http://web.archive.org/web/20100404084533/http://osu.ppy.sh/p/about?" title="4 kwi 2010"><strong>2010</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:54:43 cze 16, 2011">2011</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="http://web.archive.org/web/20120622171132/http://osu.ppy.sh/p/about" title="22 cze 2012"><strong>2012</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="http://web.archive.org/web/20110616165443*/http://osu.ppy.sh/p/about" title="See a list of every capture for this URL">59 captures</a>
+           <div class="r" title="Timespan for captures of this URL">21 sty 09 - 9 paź 14</div>
+       </td>
+       <td class="k">
+       <a href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="http://web.archive.org/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:212000000000_2010:-1:020100000000_2011:5:000001012111_2012:-1:112141022212_2013:-1:300110132400_2014:-1:112003100200_2015:-1:000000000000_2016:-1:000000000000_2017:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<a name="top"></a>
+
+
+<div class="bodytopbg">
+    <div class="mainbody"><div class="mainbody2">
+		<div id="coolheader" style="background-image: url('http://web.archive.org/web/20110616165443im_/http://osu.ppy.sh/images/right-ryuuta.jpg');"></div>
+		<div id="donation">
+			<a href='http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/support'><img src='http://web.archive.org/web/20110616165443im_/http://osu.ppy.sh/images/paypal.gif'/></a>
+		</div>
+         <div class="header">
+			<div id="playstats">
+                <b>780,769</b> users, <b>3,032</b> online now.<br />
+                A total of <b><span id='playcount'>395.61m</span></b> ranked plays!
+            </div>
+        <div class="menu">
+            <ul class="sf-menu">
+                <li id="current"><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/">Home</a></li>
+                <li>
+                    <a href="about.html">Info</a>
+                    <ul>
+                        <li><a href="about.html">The Game (PC)</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/iphone">The Game (iPhone)</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/team">The Team</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/screenshots">Screenshots</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/changelog">Changelog</a></li>
+						
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/download">Download</a></li>
+                <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/faq">Help!</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/faq">FAQ</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/formatpost&amp;id=21575">Terms Glossary</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/viewtopic.php?f=13&amp;t=3815">Video Tutorials</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/viewtopic.php?f=5&amp;t=576">Report a Bug</a></li>
+                    </ul> 
+				</li>
+                <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/beatmaplist">Beatmaps</a>
+                    <ul>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=0">Ranked</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/beatmaplist&amp;s=4&amp;r=6">Approved</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/beatmaplist&amp;s=7&amp;r=2">Pending</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/packlist">Beatmap Packs</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/playerranking">Rankings</a>
+                    <ul> 
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/playerranking">Overall Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/chart">Ranking Charts</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/countryranking">Countries</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/mapperranking">Mapper Ranking</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/modranking">BAT Ranking</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/kudosu">Kudosu Ranking</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/">Community</a>
+					<ul>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/">Forums</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/support">Supporting osu!</a></li>
+                        <li><a href="http://web.archive.org/web/20110616165443/http://www.cafepress.com/osume" target="_blank">Goodies</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://www.youtube.com/user/VideosuTV#g/p" target="_blank">Videos</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/chat" target="_blank">Web Chat</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/gallery?g=fanart">Fanart</a></li>
+						<li><a href="http://web.archive.org/web/20110616165443/http://up.ppy.sh/">upppy!</a></li>
+                    </ul>
+				</li>
+            </ul>
+        </div>
+        </div>
+                <div class="content">
+                <div class="content-infoline">
+                    <div style="float:left">
+						<form class="inline-form" action="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/search" id="cse-search-box">
+						  <div>
+							<input type="hidden" name="cx" value="007714945049801807819:fwdivvi5sik" />
+							<input type="hidden" name="cof" value="FORID:10" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="text" name="q" size="20" />
+						  </div>
+						</form>
+						<form class="inline-form" onsubmit="return userSearch()">
+							<input type="text" class="default" name="user-search" id="user-search" size="12" title="User" />
+						</form>
+						<form class="inline-form" onsubmit="return beatmapSearch()">
+							<input type="text" class="default" name="beatmap-search" id="beatmap-search" size="12" title="Beatmap" />
+						</form>
+					</div>
+									<form action="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/ucp.php?mode=login" method="post">
+						<b>user:</b> 
+						<input class="post" type="text" name="username" size="15" maxlength="40" value="" tabindex="0" /> 
+						<b>pass:</b> 
+						<input class="post" type="password" name="password" size="15" maxlength="100" tabindex="0" />
+						<a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/ucp.php?mode=sendpassword" title="Forgot Password">?</a> <a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/ucp.php?mode=register" title="Register New Account">register</a>
+						<input type="checkbox" class="radio" name="autologin" id="autologin"/> <label for="autologin">save</label>
+						<input type="hidden" name="redirect" value="/p/about" />
+						<input type="hidden" name="sid" value="88a05997efd3a39295df8c2d6e3a4318" />
+						<input type="submit" name="login" value="login" tabindex="5" />
+					</form>
+				                </div>
+<div class="paddingboth">
+<h2>Let's learn about osu!</h2>
+
+<div class="marginp">osu! is primarily played using a mouse to click 'beats' displayed on-screen in time with the music. This is analogous to tapping the beats on the Nintendo DS screen with a stylus. At the top of the screen, a health bar is present, which is constantly drained. If the player hits or clears a beat, the health meter at the top of the screen fills slightly. If he misses a beat, a large part of the meter is drained, and if it gets completely empty, he fails the song. There are three types of beats in the game: Hit circles, sliders and spinners. Every time the player hits a hit circle or an end circle, touch a slider tick, or clear a spinner, the combo is raised by 1. If he misses any of the above, the combo is reset back to 0.</div>
+
+<div class="marginp"><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/faq">If you are looking for help, click here.</a><br/>
+<a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/forum/viewtopic.php?f=13&amp;t=581">If you want to see osu! in action, check out some videos in this thread.</a><br/>
+</div>
+
+<h2>osu! History</h2>
+
+<h3>2007</h3>
+
+<div class="centrep"><img src="http://web.archive.org/web/20110616165443im_/http://osu.ppy.sh/images/history1.jpg"/></div>
+
+<div class="marginp">osu! was initially developed as a proof-of-concept by peppy in July 2007.  It was his first attempt at making a game since the point-and-click titles he used to make many years previously.  After it turned out better than expected in a short period of time, it became clear that this gaming style had more potential than has already been released.  This was the birth of osu!.</div>
+
+<h3>2008</h3>
+
+<div class="centrep"><img src="http://web.archive.org/web/20110616165443im_/http://osu.ppy.sh/images/history2.jpg"/></div>
+
+<div class="marginp">osu! is now beyond its time in many areas, with a huge focus on web integration and community aspects.  Features are added based on people's requests, and their perceived usefulness to the community as a whole.  The map submission process (Beatmap Submission System) is seamless and intuitive from start to finish.  Importing songs, loading skins and playing the game is simple enough for almost anyone to handle.</div>
+
+<div class="marginp">Multiplayer support is available.  New gameplay modes are implemented to expand the scope of this game beyond its original expectations.</div>
+
+<h3>The Future</h3>
+
+<div class="marginp">Think big, and expect big.</div>
+
+</div>
+				<div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <table width=100%>
+			<tr>
+			<td width=33%></td>
+			<td width=33% align=middle>osu! is © peppy 2007-2011</td>
+			<td width=34% align=right><a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/terms">Terms of Service</a> | <a href="http://web.archive.org/web/20110616165443/http://osu.ppy.sh/p/copyright">Copyright</a></td>
+			</tr>
+			</table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "/web/20110616165443/https://ssl." : "/web/20110616165443/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4774947-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" src="http://web.archive.org/web/20110616165443js_/http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</body>
+
+<!-- Mirrored from web.archive.org/web/20110616165443/http://osu.ppy.sh/p/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Feb 2017 10:15:45 GMT -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 16:54:43 cze 16, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:15:36 lut 4, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
